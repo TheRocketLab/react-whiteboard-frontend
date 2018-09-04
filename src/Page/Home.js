@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 
-import CharacterCard from 'Components/CharacterCard';
+import TeamCard from 'Components/TeamCard';
 
 class Home extends Component {
   state = {
-    peoples: [],
+    teams: [],
   };
 
   componentDidMount() {
-    fetch('https://swapi.co/api/people')
+    fetch('http://localhost:3004/league')
       .then(response => response.json())
-      .then(json => this.setState({ peoples: json.results }));
+      .then(json => this.setState({ teams: json.standard }));
   }
 
   render() {
-    const { peoples } = this.state;
+    const { teams } = this.state;
 
     return (
       <div className="App">
@@ -24,8 +24,8 @@ class Home extends Component {
           <h1 className="App-title">React Whiteboard</h1>
         </header>
         <div className="App-intro">
-          {peoples.map(character => (
-            <CharacterCard key={character.name} name={character.name} />
+          {teams.map(team => (
+            <TeamCard key={team.tricode} {...team} />
           ))}
         </div>
       </div>

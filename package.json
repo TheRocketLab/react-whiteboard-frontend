@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "json-server": "^0.14.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
@@ -12,7 +13,8 @@
     "node": ">=8.11.3 <9"
   },
   "scripts": {
-    "start": "NODE_PATH=src react-scripts start",
+    "start-server": "json-server --watch ./data/teams.json --read-only --no-cors --delay 1500 --port 3004",
+    "start": "NODE_PATH=src react-scripts start & yarn start-server",
     "build": "NODE_PATH=src react-scripts build",
     "test": "NODE_PATH=src react-scripts test --env=jsdom",
     "eject": "NODE_PATH=src react-scripts eject",
