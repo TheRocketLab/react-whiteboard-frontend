@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class People extends Component {
-
   render() {
-    <div>{this.props.name}</div>
+    <div>{this.props.name}</div>;
   }
 }
 
-export { People };
+export default People;
