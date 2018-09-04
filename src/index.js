@@ -5,5 +5,12 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { ThemedApp } from './styles';
+
+ReactDOM.render(
+  <ThemedApp>
+    <App />
+  </ThemedApp>,
+  document.getElementById('root')
+);
 registerServiceWorker();

@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
+import { Wrapper } from './style';
+
 class People extends Component {
   render() {
-    <div>{this.props.name}</div>;
+    return <Wrapper>{this.props.name}</Wrapper>;
   }
 }
 
