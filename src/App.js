@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 
-import People from 'Components/People';
+import CharacterCard from 'Components/CharacterCard';
 
 class App extends Component {
   state = {
@@ -24,11 +23,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">React Whiteboard</h1>
         </header>
-        <p className="App-intro">
-          {peoples.map(person => (
-            <People name={person.name} />
+        <div className="App-intro">
+          {peoples.map(character => (
+            <CharacterCard key={character.name} name={character.name} />
           ))}
-        </p>
+        </div>
       </div>
     );
   }

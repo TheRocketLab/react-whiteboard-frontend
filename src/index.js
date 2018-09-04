@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
+import './styles/global';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
 import { ThemedApp } from './styles';
 
@@ -13,4 +12,3 @@ ReactDOM.render(
   </ThemedApp>,
   document.getElementById('root')
 );
-registerServiceWorker();
