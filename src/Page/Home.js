@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 
-import TeamCard from 'Components/TeamCard';
+import LeagueSection from 'Components/LeagueSection';
 
 class Home extends Component {
   state = {
-    teams: [],
+    leagues: [],
   };
 
   componentDidMount() {
     fetch('http://localhost:3004/league')
       .then(response => response.json())
-      .then(json => this.setState({ teams: json.standard }));
+      .then(json => this.setState({ leagues: json }));
   }
 
   render() {
-    const { teams } = this.state;
+    const { leagues } = this.state;
 
     return (
       <div className="App">
@@ -24,8 +24,8 @@ class Home extends Component {
           <h1 className="App-title">React Whiteboard</h1>
         </header>
         <div className="App-intro">
-          {teams.map(team => (
-            <TeamCard key={team.tricode} {...team} />
+          {Object.keys(leagues).map(league => (
+            <LeagueSection key={league} name={league} teams={leagues[league]} />
           ))}
         </div>
       </div>

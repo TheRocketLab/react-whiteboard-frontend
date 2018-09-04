@@ -2,7 +2,7 @@
 
 ## TODO
 
-For this project we are using the [swapi public API](https://swapi.co/).
+For this project we are using a local API using `json-server` running on http://localhost:3004 when starting react app.
 
 - [ ] Modularise the existing app creating a Component for the logo
 - [ ] Introduce the notion of Layout so we don't have to copy/paste the `Header` on every `Page`
