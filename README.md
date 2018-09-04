@@ -11,3 +11,7 @@ For this project we are using the [swapi public API](https://swapi.co/).
 - [ ] Introduce some animations to display the characters on the page
 
 It should take you between 30 to 40 minutes to do so.
+
+- You have a [sketch version available here](https://github.com/TheRocketLab/react-whiteboard-frontend/blob/master/docs/demo.sketch)
+
+![Design Preview](https://github.com/TheRocketLab/react-whiteboard-frontend/blob/master/docs/demo.png)
