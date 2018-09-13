@@ -2,7 +2,7 @@
 
 ## How to run it
 
-This is a basic CRA application with styled-component setup in it. We use a theme located in `styles/styled-component-theme.js`  
+This is a basic CRA application with `styled-component` setup in it. We use a theme located in `styles/styled-component-theme.js`  
 Additionaly we have a local JSON server that will start automatically when you start the React Application. This server is serving a static JSON file located in `data`.
 You won't need to worry about this server for this test.
 
@@ -32,5 +32,5 @@ Here is the list of things you need to do:
 
 It should take you around 45 minutes to do so.
 
-![Design Preview](https://github.com/TheRocketLab/react-whiteboard-frontend/blob/master/docs/demo-nba.png)
-![Card Preview](https://github.com/TheRocketLab/react-whiteboard-frontend/blob/master/docs/nba-card.png)
+![Design Preview](https://github.com/TheRocketLab/react-whiteboard-frontend/blob/nba/docs/demo-nba.png)
+![Card Preview](https://github.com/TheRocketLab/react-whiteboard-frontend/blob/nba/docs/nba-card.png)
