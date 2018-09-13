@@ -4,9 +4,9 @@ import TeamCard from 'Components/TeamCard';
 
 const LeagueSection = ({ name, teams }) => (
   <div>
-    <span>{name.toUpperCase()}</span>
+    <span style={{ fontWeight: 'bold' }}>LEAGUE {name.toUpperCase()}</span>
     {teams.map(team => (
-      <TeamCard key={team.tricode} {...team} />
+      <TeamCard key={team.tricode} {...team} league={name} />
     ))}
   </div>
 );
