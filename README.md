@@ -24,11 +24,11 @@ As mention above, for this project we are using a local API using `json-server` 
 
 Here is the list of things we need to do:
 
-1 - Update the `LeagueSection` and `TeamCard` component to make it look like the provided design
-2 - Introduce animations to display the teams on the page with the library of you choice
-3 - Modularise the existing app creating a Component for the logo
-4 - Introduce the notion of Layout so we don't have to copy/paste the `Header` on every `Page`
-5 - Add loader while fetching the data using `react-content-loader`
+1. Update the `LeagueSection` and `TeamCard` component to make it look like the provided design
+2. Introduce animations to display the teams on the page with the library of you choice
+3. Modularise the existing app creating a Component for the logo
+4. Introduce the notion of Layout so we don't have to copy/paste the `Header` on every `Page`
+5. Add loader while fetching the data using `react-content-loader`
 
 We have around 45 minutes, no rush we'll just do what we can.
 The first task being the most important, the other ones are listed in case we have some spare time.
