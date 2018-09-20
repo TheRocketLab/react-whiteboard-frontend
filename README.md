@@ -22,15 +22,24 @@ $ yarn start
 
 As mention above, for this project we are using a local API using `json-server` running on http://localhost:3004
 
-Here is the list of things you need to do:
+Here is the list of things we need to do:
 
-- [ ] Update the `LeagueSection` and `TeamCard` component to make it look like the provided design
-- [ ] Introduce animations to display the teams on the page with the library of you choice
-- [ ] Modularise the existing app creating a Component for the logo
-- [ ] Introduce the notion of Layout so we don't have to copy/paste the `Header` on every `Page`
-- [ ] Add loader while fetching the data using `react-content-loader`
+1 - Update the `LeagueSection` and `TeamCard` component to make it look like the provided design
+2 - Introduce animations to display the teams on the page with the library of you choice
+3 - Modularise the existing app creating a Component for the logo
+4 - Introduce the notion of Layout so we don't have to copy/paste the `Header` on every `Page`
+5 - Add loader while fetching the data using `react-content-loader`
 
-It should take you around 45 minutes to do so.
+We have around 45 minutes, no rush we'll just do what we can.
+The first task being the most important, the other ones are listed in case we have some spare time.
+
+## Folder Structure
+
+- `src/styles`: Contains the styled-component theme
+- `src/Page`: has the only page from the application (Home)
+- `src/Components`: where we have our shared components, in this case our card to display the team
+
+## Design Preview
 
 ![Design Preview](https://github.com/TheRocketLab/react-whiteboard-frontend/blob/nba/docs/demo-nba.png)
 ![Card Preview](https://github.com/TheRocketLab/react-whiteboard-frontend/blob/nba/docs/nba-card.png)
