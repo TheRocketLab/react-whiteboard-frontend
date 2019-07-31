@@ -14,7 +14,7 @@ const Home = () => {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <GlobalStyle />
       <div className="App">
         <header className="App-header">
@@ -28,7 +28,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

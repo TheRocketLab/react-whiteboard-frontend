@@ -1,5 +1,10 @@
 # react-whiteboard
 
+## Third Party Doc
+
+- styled components: https://www.styled-components.com/docs/basics
+- JSON Server: https://github.com/typicode/json-server
+
 ## How to run it
 
 This is a basic CRA application with `styled-component` setup in it. We use a theme located in `styles/styled-component-theme.js`  
