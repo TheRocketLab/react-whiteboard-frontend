@@ -1,6 +1,6 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
@@ -37,3 +37,5 @@ injectGlobal`
     to { transform: rotate(360deg); }
   }
 `;
+
+export default GlobalStyle;

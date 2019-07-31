@@ -4,11 +4,11 @@
   "private": true,
   "dependencies": {
     "json-server": "^0.14.0",
-    "react": "^16.4.1",
+    "react": "^16.8.6",
     "react-content-loader": "^3.1.2",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.8.6",
     "react-scripts": "1.1.4",
-    "styled-components": "^3.4.5"
+    "styled-components": "^4.3.2"
   },
   "engines": {
     "node": ">=8.11.3 <9"

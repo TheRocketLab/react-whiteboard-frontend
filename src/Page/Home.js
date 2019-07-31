@@ -1,36 +1,35 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 
-import LeagueSection from 'Components/LeagueSection';
+import GlobalStyle from '../styles/global';
+import LeagueSection from '../Components/LeagueSection';
 
-class Home extends Component {
-  state = {
-    leagues: [],
-  };
+const Home = () => {
+  const [leagues, setLeagues] = React.useState([]);
 
-  componentDidMount() {
+  React.useEffect(() => {
     fetch('http://localhost:3004/league')
       .then(response => response.json())
-      .then(json => this.setState({ leagues: json }));
-  }
+      .then(json => setLeagues(json));
+  }, []);
 
-  render() {
-    const { leagues } = this.state;
-
-    return (
+  return (
+    <React.Fragment>
+      <GlobalStyle />
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">React Whiteboard</h1>
         </header>
+
         <div className="App-intro">
           {Object.keys(leagues).map(league => (
             <LeagueSection key={league} name={league} teams={leagues[league]} />
           ))}
         </div>
       </div>
-    );
-  }
-}
+    </React.Fragment>
+  );
+};
 
 export default Home;
