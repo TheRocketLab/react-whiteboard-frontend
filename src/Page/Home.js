@@ -1,17 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
+import data from '../data/teams.json';
 
 import GlobalStyle from '../styles/global';
 import LeagueSection from '../Components/LeagueSection';
 
 const Home = () => {
-  const [leagues, setLeagues] = React.useState([]);
+  // const [leagues, setLeagues] = React.useState([]);
 
-  React.useEffect(() => {
-    fetch('http://localhost:3004/league')
-      .then(response => response.json())
-      .then(json => setLeagues(json));
-  }, []);
+  // React.useEffect(() => {
+  //   fetch('http://localhost:3004/league')
+  //     .then(response => response.json())
+  //     .then(json => setLeagues(json));
+  // }, []);
+
+  console.log(data.league);
 
   return (
     <>
@@ -23,8 +26,12 @@ const Home = () => {
         </header>
 
         <div className="App-intro">
-          {Object.keys(leagues).map(league => (
-            <LeagueSection key={league} name={league} teams={leagues[league]} />
+          {Object.keys(data.league).map(league => (
+            <LeagueSection
+              key={league}
+              name={league}
+              teams={data.league[league]}
+            />
           ))}
         </div>
       </div>

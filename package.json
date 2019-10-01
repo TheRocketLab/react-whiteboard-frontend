@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start-server": "json-server --watch ./data/teams.json --read-only --no-cors --delay 1500 --port 3004",
-    "start": "react-scripts start & yarn start-server",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
